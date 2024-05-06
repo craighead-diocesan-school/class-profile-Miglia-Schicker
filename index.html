@@ -11,37 +11,79 @@
       <h1>Our Class</h1>
     </header>
 
+    <nav>
+      <a class="active" href=""> Our Class</a>
+      <a href=""> Student Profiles</a>
+      <a href=""> Our School</a>
+    </nav>
+
+    <img src="students-working.jpg" alt="students-working -photo" />
+
     <main>
-      <nav>
-        <a href=""> Our Class</a>
-        <a href=""> Student Profiles</a>
-        <a href=""> Our School</a>
-      </nav>
-
-      <img src="students-working.jpg" alt="students-working -photo" />
-
       <p>Our class of high-performing digital technology students likes to get stuck into any project that takes their fancy. The girls are in their final year at secondary school and are all working on personal projects that interest them.</p>
     </main>
 
     <footer>&copy;Miglia Schicker 2024</footer>
 
     <style>
+      body {
+        display: grid;
+        grid:
+          " h    h    h   h" 25vh
+          " n    n    n   n" 10vh
+          " .    i    m   ." 60vh
+          " f    f    f   f" 5vh
+          / 1fr 2fr 2fr 1fr;
+      }
+
       header {
+        grid-area: h;
+        background-color: #4c5760;
       }
 
       h1 {
+        color: #d0cbbd;
+        font-size: xxx-large;
+        margin-left: 30px;
       }
 
       nav {
+        grid-area: n;
+        background-color: #d0cbbd;
+      }
+
+      nav a {
+        color: #4c5760;
+      }
+
+      .active {
       }
 
       img {
+        grid-area: i;
+        width: 25rem;
+        margin-top: 45px;
+      }
+
+      main {
+        grid-area: m;
+        margin-top: 110px;
+        font-size: large;
       }
 
       p {
+        color: #4c5760;
       }
 
       footer {
+        grid-area: f;
+        background-color: #4c5760;
+        text-align: center;
+      }
+
+      body {
+        margin: 0px;
+        background-color: #93a8ac;
       }
     </style>
   </body>
