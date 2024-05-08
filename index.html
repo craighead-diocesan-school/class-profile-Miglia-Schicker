@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Patrick+Hand&family=Salsa&display=swap" rel="stylesheet" />
   </head>
 
   <body>
@@ -45,18 +49,37 @@
         color: #d0cbbd;
         font-size: xxx-large;
         margin-left: 30px;
+
+        font-family: "Salsa", cursive;
+        font-weight: 400;
+        font-style: normal;
       }
 
       nav {
         grid-area: n;
         background-color: #d0cbbd;
+        font-family: "Lemonada", cursive;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
       }
 
       nav a {
         color: #4c5760;
+        border-radius: 2rem;
+        border: 1px solid #93a8ac;
+        background-color: #93a8ac;
+        text-decoration: none;
+        padding: 0.25rem;
       }
 
       .active {
+        border: 1px solid #4c5760;
+        background-color: #4c5760;
+        color: #93a8ac;
       }
 
       img {
@@ -73,12 +96,20 @@
 
       p {
         color: #4c5760;
+
+        font-family: "Patrick Hand", cursive;
+        font-weight: 400;
+        font-style: normal;
       }
 
       footer {
         grid-area: f;
         background-color: #4c5760;
         text-align: center;
+        color: #d0cbbd;
+        font-family: "Patrick Hand", cursive;
+        font-weight: 400;
+        font-style: normal;
       }
 
       body {
